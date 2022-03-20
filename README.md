@@ -3,10 +3,6 @@
 <p align="center"><a href="https://draculatheme.com/">Dracula</a>-ish colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
 <p align="center">Forked from <a href="https://github.com/Mofiqul/dracula.nvim">dracula.nvim</a> to adjust colors to my liking, all credit for all the formatting and support to Mofiqul.</p>
 
-![TypeScript and NvimTree](./assets/1.png)
-
-![Lua](./assets/2.png)
-
 ## ✔️ Requirements
 
 - Neovim >= 0.5.0
@@ -32,35 +28,35 @@ Install via package manager
 
 ```lua
 -- Using Packer:
-use 'Mofiqul/dracula.nvim'
+use 'beardage/orlock.nvim'
 ```
 
 ```vim
 " Using Vim-Plug:
-Plug 'Mofiqul/dracula.nvim'
+Plug 'beardage.orlock.nvim'
 ```
 
 ## 🚀 Usage
 
 ```lua
 -- Lua:
-vim.cmd[[colorscheme dracula]]
+vim.cmd[[colorscheme orlock]]
 ```
 
 ```vim
 " Vim-Script:
-colorscheme dracula
+colorscheme orlock
 ```
 
 If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
 
-> Make sure to set theme as 'dracula-nvim' as dracula already exists in lualine built in themes
+> Make sure to set theme as 'orlock'
 
 ```lua
 require('lualine').setup {
   options = {
     -- ...
-    theme = 'dracula-nvim'
+    theme = 'orlock'
     -- ...
   }
 }'
