@@ -1,40 +1,40 @@
-local dracula = {}
+local orlock = {}
 
-local colors = require('dracula').colors()
+local colors = require('orlock').colors()
 
 local bg = ""
-if vim.g.dracula_lualine_bg_color ~= nil then
-    bg = vim.g.dracula_lualine_bg_color
+if vim.g.orlock_lualine_bg_color ~= nil then
+    bg = vim.g.orlock_lualine_bg_color
 else
     bg = colors.black
 end
 
-dracula.normal = {
+orlock.normal = {
   a = {fg = colors.black, bg = colors.purple, gui = 'bold'},
   b = {fg = colors.purple, bg = bg},
   c = {fg = colors.white, bg = bg},
 }
 
-dracula.visual = {
+orlock.visual = {
   a = {fg = colors.black, bg = colors.pink, gui = 'bold'},
   b = {fg = colors.pink, bg = bg},
 }
 
-dracula.inactive = {
+orlock.inactive = {
   a = {fg = colors.white, bg = colors.gray, gui = 'bold'},
   b = {fg = colors.black, bg = colors.white},
 }
 
-dracula.replace = {
+orlock.replace = {
   a = {fg = colors.black, bg = colors.yellow, gui = 'bold'},
   b = {fg = colors.yellow, bg = bg},
   c = {fg = colors.white, bg = bg},
 }
 
-dracula.insert = {
+orlock.insert = {
   a = {fg = colors.black, bg = colors.green, gui = 'bold'},
   b = {fg = colors.green, bg = bg},
   c = {fg = colors.white, bg = bg},
 }
 
-return dracula
+return orlock

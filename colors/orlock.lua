@@ -1,4 +1,4 @@
-local dracula = require("dracula")
+local orlock = require("orlock")
 
 vim.cmd("hi clear")
 
@@ -10,4 +10,4 @@ vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.g.colors_name = "dracula"
 
-dracula.apply();
+orlock.apply();

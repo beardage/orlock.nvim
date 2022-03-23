@@ -1,4 +1,4 @@
--- Dracula color scheme
+-- Orlock color scheme
 
 local M = {}
 
@@ -29,7 +29,7 @@ local DEFAULT_COLORS = {
   black = "#191A21",
 }
 
-local colors = vim.tbl_deep_extend('force', DEFAULT_COLORS, vim.g.dracula_colors or {})
+local colors = vim.tbl_deep_extend('force', DEFAULT_COLORS, vim.g.orlock_colors or {})
 
 M.colors = function()
   return colors
@@ -58,7 +58,7 @@ end
 
 M.apply = function()
 
-    local isItalic = vim.g.dracula_italic_comment == true
+    local isItalic = vim.g.orlock_italic_comment == true
 
 	local highlight = function(group, fg, bg, attr, sp)
 		fg = fg and "guifg=" .. fg or "guifg=NONE"
@@ -72,7 +72,7 @@ M.apply = function()
 	M.apply_term_colors(colors)
 
 	-- highlight(Group, Foreground, Backgroud, Attribute, Special)
-	if(vim.g.dracula_transparent_bg == true) then
+	if(vim.g.orlock_transparent_bg == true) then
 		highlight("Normal", colors.fg, nil, nil, nil)
 	else
 		highlight("Normal", colors.fg, colors.bg, nil, nil)
@@ -116,7 +116,7 @@ M.apply = function()
 	highlight("CursorColumn", nil, colors.black, "reverse", nil)
 	highlight("CursorLineNr", colors.fg, nil, "bold", nil)
 
-	if(vim.g.dracula_transparent_bg == true)then
+	if(vim.g.orlock_transparent_bg == true)then
 		highlight("SignColumn", nil, nil, nil, nil)
 	else
 		highlight("SignColumn", nil, colors.bg, nil, nil)
@@ -170,7 +170,7 @@ M.apply = function()
 	highlight("WarningMsg", colors.yellow, nil, nil, nil)
 	highlight("WildMenu", colors.black, colors.white, nil, nil)
 
-	if(vim.g.dracula_show_end_of_buffer == true) then
+	if(vim.g.orlock_show_end_of_buffer == true) then
 		highlight("EndOfBuffer", colors.visual, nil, nil, nil)
 	else
 		highlight("EndOfBuffer", colors.bg, nil, nil, nil)
@@ -311,7 +311,7 @@ M.apply = function()
 	highlight("TelescopePromptPrefix", colors.purple, nil, nil, nil)
 
 	-- NvimTree
-	if(vim.g.dracula_transparent_bg == true) then
+	if(vim.g.orlock_transparent_bg == true) then
 		highlight("NvimTreeNormal ", colors.fg, nil, nil, nil)
 		highlight("NvimTreeVertSplit", nil, nil, nil, nil)
 	else
@@ -331,7 +331,7 @@ M.apply = function()
 	highlight("NvimTreeCursorLine", nil, colors.selection, nil, nil)
 	highlight("NvimTreeIn", nil, colors.selection, nil, nil)
 
-	if(vim.g.dracula_show_end_of_buffer == true) then
+	if(vim.g.orlock_show_end_of_buffer == true) then
 		highlight("NvimTreeEndOfBuffer", colors.visual, nil, nil, nil)
 	else
 		highlight("NvimTreeEndOfBuffer", colors.bg, nil, nil, nil)
