@@ -8,6 +8,6 @@ end
 
 vim.o.background = "dark"
 vim.o.termguicolors = true
-vim.g.colors_name = "dracula"
+vim.g.colors_name = "orlock"
 
 orlock.apply();
