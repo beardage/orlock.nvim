@@ -233,8 +233,8 @@ M.apply = function()
 	highlight("TSLiteral", colors.yellow, nil, nil, nil)      -- inline code
 	highlight("TSURI", colors.yellow, nil, "italic", nil)     -- urls
 
-	highlight("TSTag", colors.white, nil, nil, nil)
-	highlight("TSTagDelimiter", colors.gutter_fg, nil, nil, nil)
+	highlight("TSTag", colors.bright_violet, nil, nil, nil)
+	highlight("TSTagDelimiter", colors.white, nil, nil, nil)
 
 	-- HTML
 	highlight("htmlArg", colors.yellow, nil, nil, nil)
