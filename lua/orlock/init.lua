@@ -204,7 +204,7 @@ M.apply = function()
 	highlight("TSParameterReference", colors.orange, nil, nil, nil)
 	highlight("TSMethod", colors.green, nil, nil, nil)
 	highlight("TSField", colors.orange, nil, nil, nil)
-	highlight("TSProperty", colors.bright_magenta, nil, nil, nil)
+	highlight("TSProperty", colors.bright_cyan, nil, nil, nil)
 	highlight("TSConstructor", colors.cyan, nil, nil, nil)
 
 	highlight("TSConditional", colors.pink, nil, nil, nil)
