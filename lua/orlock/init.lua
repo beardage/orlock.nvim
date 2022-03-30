@@ -204,7 +204,7 @@ M.apply = function()
 	highlight("TSParameterReference", colors.orange, nil, nil, nil)
 	highlight("TSMethod", colors.green, nil, nil, nil)
 	highlight("TSField", colors.orange, nil, nil, nil)
-	highlight("TSProperty", colors.fg, nil, nil, nil)
+	highlight("TSProperty", colors.bright_magenta, nil, nil, nil)
 	highlight("TSConstructor", colors.cyan, nil, nil, nil)
 
 	highlight("TSConditional", colors.pink, nil, nil, nil)
@@ -221,10 +221,10 @@ M.apply = function()
 	highlight("TSStructure", colors.purple, nil, nil, nil)
 	highlight("TSInclude", colors.pink, nil, nil, nil)
 
-	highlight("TSVariable", colors.fg, nil, nil, nil)
+	highlight("TSVariable", colors.bright_green, nil, nil, nil)
 	highlight("TSVariableBuiltin", colors.purple, nil, nil, nil)
 
-  highlight("TSText", colors.orange, nil, nil, nil)
+	highlight("TSText", colors.orange, nil, nil, nil)
 	highlight("TSStrong", colors.orange, nil, "bold", nil)  -- bold
 	highlight("TSEmphasis", colors.yellow, nil, "italic", nil)  -- italic
 	highlight("TSUnderline", colors.orange, nil, nil, nil)
@@ -232,7 +232,7 @@ M.apply = function()
 	highlight("TSLiteral", colors.yellow, nil, nil, nil)      -- inline code
 	highlight("TSURI", colors.yellow, nil, "italic", nil)     -- urls
 
-  highlight("TSTag", colors.cyan, nil, nil, nil)
+	highlight("TSTag", colors.cyan, nil, nil, nil)
 	highlight("TSTagDelimiter", colors.white, nil, nil, nil)
 
 	-- HTML
