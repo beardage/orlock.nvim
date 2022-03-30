@@ -19,6 +19,7 @@ local DEFAULT_COLORS = {
   bright_yellow = "#FFFFA5",
   bright_blue = "#7DD3FC",
   bright_magenta = "#E868F9",
+  bright_violet = "#C4B5FD"
   bright_cyan = "#A5F3FC",
   bright_white = "#FFFFFF",
   menu = "#111827",
@@ -232,8 +233,8 @@ M.apply = function()
 	highlight("TSLiteral", colors.yellow, nil, nil, nil)      -- inline code
 	highlight("TSURI", colors.yellow, nil, "italic", nil)     -- urls
 
-	highlight("TSTag", colors.cyan, nil, nil, nil)
-	highlight("TSTagDelimiter", colors.white, nil, nil, nil)
+	highlight("TSTag", colors.bright_violet, nil, nil, nil)
+	highlight("TSTagDelimiter", colors.gutter_fg, nil, nil, nil)
 
 	-- HTML
 	highlight("htmlArg", colors.yellow, nil, nil, nil)
