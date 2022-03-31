@@ -219,7 +219,7 @@ M.apply = function()
 	highlight("TSOperator", colors.pink, nil, nil, nil)
 	highlight("TSException", colors.purple, nil, nil, nil)
 	highlight("TSType", colors.blue, nil, nil, nil)
-	highlight("TSTypeBuiltin", colors.cyan, nil, "italic", nil)
+	highlight("TSTypeBuiltin", colors.bright_cyan, nil, "italic", nil)
 	highlight("TSStructure", colors.purple, nil, nil, nil)
 	highlight("TSInclude", colors.pink, nil, nil, nil)
 
