@@ -9,10 +9,11 @@ local DEFAULT_COLORS = {
   comment = "#64748B",
   red = "#EF4444",
   orange = "#F58E0B",
-  yellow = "#FACC15",
+  yellow = "#FDE047",
   green = "#34D399",
   purple = "#A78BFA",
   cyan = "#67E8F9",
+  teal = "#5EEAD4",
   pink = "#F472B6",
   bright_red = "#FF6E6E",
   bright_green = "#4ADE80",
@@ -43,7 +44,7 @@ M.apply_term_colors = function(colors)
 	vim.g.terminal_color_3 = colors.yellow
 	vim.g.terminal_color_4 = colors.purple
 	vim.g.terminal_color_5 = colors.pink
-	vim.g.terminal_color_6 = colors.cyan
+	vim.g.terminal_color_6 = colors.teal
 	vim.g.terminal_color_7 = colors.white
 	vim.g.terminal_color_8 = colors.selection
 	vim.g.terminal_color_9 = colors.bright_red
@@ -203,10 +204,10 @@ M.apply = function()
 	highlight("TSFuncMacro", colors.green, nil, nil, nil)
 	highlight("TSParameter", colors.orange, nil, nil, nil)
 	highlight("TSParameterReference", colors.orange, nil, nil, nil)
-	highlight("TSMethod", colors.green, nil, nil, nil)
+	highlight("TSMethod", colors.bright_violet, nil, nil, nil)
 	highlight("TSField", colors.orange, nil, nil, nil)
-	highlight("TSProperty", colors.bright_cyan, nil, nil, nil)
-	highlight("TSConstructor", colors.cyan, nil, nil, nil)
+	highlight("TSProperty", colors.bright_green, nil, nil, nil)
+	highlight("TSConstructor", colors.bright_violet, nil, nil, nil)
 
 	highlight("TSConditional", colors.pink, nil, nil, nil)
 	highlight("TSRepeat", colors.pink, nil, nil, nil)
@@ -222,7 +223,7 @@ M.apply = function()
 	highlight("TSStructure", colors.purple, nil, nil, nil)
 	highlight("TSInclude", colors.pink, nil, nil, nil)
 
-	highlight("TSVariable", colors.bright_green, nil, nil, nil)
+	highlight("TSVariable", colors.teal, nil, nil, nil)
 	highlight("TSVariableBuiltin", colors.purple, nil, nil, nil)
 
 	highlight("TSText", colors.orange, nil, nil, nil)
