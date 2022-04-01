@@ -1,8 +1,8 @@
 <h1 align="center" >🧛‍♂️ orlock.nvim</h1>
 
 <p align="center"><a href="https://draculatheme.com/">Dracula</a>-ish colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
-<p align="center">Forked from <a href="https://github.com/Mofiqul/dracula.nvim">dracula.nvim</a> to adjust colors to my liking, all credit for all the formatting and support to Mofiqul.</p>
-
+<p align="center">Forked from <a href="https://github.com/Mofiqul/dracula.nvim">dracula.nvim</a> to adjust colors to my liking, all credit for all the formatting and support to <a href="https://github.com/Mofiqul">Mofiqul</a>.</p>
+![example](./assets/1.png)
 ## ✔️ Requirements
 
 - Neovim >= 0.5.0
@@ -67,39 +67,43 @@ require('lualine').setup {
 If you're using lua
 
 ```lua
--- customize dracula color palette
-vim.g.dracula_colors = {
-  bg = "#282A36",
-  fg = "#F8F8F2",
-  selection = "#44475A",
-  comment = "#6272A4",
-  red = "#FF5555",
-  orange = "#FFB86C",
-  yellow = "#F1FA8C",
-  green = "#50fa7b",
-  purple = "#BD93F9",
-  cyan = "#8BE9FD",
-  pink = "#FF79C6",
+-- customize orlock color palette
+vim.g.orlock_colors = {
+  bg = "#1F2937",
+  fg = "#F8FAFC",
+  selection = "#334155",
+  comment = "#64748B",
+  red = "#EF4444",
+  orange = "#F58E0B",
+  yellow = "#FDE047",
+  green = "#34D399",
+  purple = "#A78BFA",
+  cyan = "#67E8F9",
+  teal = "#5EEAD4",
+  pink = "#F472B6",
   bright_red = "#FF6E6E",
-  bright_green = "#69FF94",
+  bright_green = "#4ADE80",
   bright_yellow = "#FFFFA5",
-  bright_blue = "#D6ACFF",
-  bright_magenta = "#FF92DF",
-  bright_cyan = "#A4FFFF",
+  bright_blue = "#7DD3FC",
+  bright_magenta = "#E868F9",
+  bright_violet = "#C4B5FD",
+  bright_cyan = "#A5F3FC",
   bright_white = "#FFFFFF",
-  menu = "#21222C",
+  menu = "#111827",
   visual = "#3E4452",
   gutter_fg = "#4B5263",
   nontext = "#3B4048",
+  white = "#F9FAFB",
+  black = "#111827",
 }
 -- show the '~' characters after the end of buffers
-vim.g.dracula_show_end_of_buffer = true
+vim.g.orlock_show_end_of_buffer = true
 -- use transparent background
-vim.g.dracula_transparent_bg = true
+vim.g.orlock_transparent_bg = true
 -- set custom lualine background color
-vim.g.dracula_lualine_bg_color = "#44475a"
+vim.g.orlock_lualine_bg_color = "#44475a"
 -- set italic comment
-vim.g.dracula_italic_comment = true
+vim.g.orlock_italic_comment = true
 ```
 
 The same works in viml
@@ -107,29 +111,33 @@ The same works in viml
 ```vim
 " customize dracula color palette
 lua << EOF
-vim.g.dracula_colors = {
-  bg = "#282A36",
-  fg = "#F8F8F2",
-  selection = "#44475A",
-  comment = "#6272A4",
-  red = "#FF5555",
-  orange = "#FFB86C",
-  yellow = "#F1FA8C",
-  green = "#50fa7b",
-  purple = "#BD93F9",
-  cyan = "#8BE9FD",
-  pink = "#FF79C6",
+vim.g.orlock_colors = {
+  bg = "#1F2937",
+  fg = "#F8FAFC",
+  selection = "#334155",
+  comment = "#64748B",
+  red = "#EF4444",
+  orange = "#F58E0B",
+  yellow = "#FDE047",
+  green = "#34D399",
+  purple = "#A78BFA",
+  cyan = "#67E8F9",
+  teal = "#5EEAD4",
+  pink = "#F472B6",
   bright_red = "#FF6E6E",
-  bright_green = "#69FF94",
+  bright_green = "#4ADE80",
   bright_yellow = "#FFFFA5",
-  bright_blue = "#D6ACFF",
-  bright_magenta = "#FF92DF",
-  bright_cyan = "#A4FFFF",
+  bright_blue = "#7DD3FC",
+  bright_magenta = "#E868F9",
+  bright_violet = "#C4B5FD",
+  bright_cyan = "#A5F3FC",
   bright_white = "#FFFFFF",
-  menu = "#21222C",
+  menu = "#111827",
   visual = "#3E4452",
   gutter_fg = "#4B5263",
   nontext = "#3B4048",
+  white = "#F9FAFB",
+  black = "#111827",
 }
 EOF
 " Enable/disable animations
@@ -150,6 +158,6 @@ let g:orlock_italic_comment = 1
 require('orlock').colors()
 ```
 
-This will return the folowing table
+This will return the following table
 
 ![colors](./assets/colors.png)
