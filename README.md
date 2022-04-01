@@ -2,7 +2,9 @@
 
 <p align="center"><a href="https://draculatheme.com/">Dracula</a>-ish colorscheme for <a href="https://neovim.io/">NEOVIM</a> written in Lua</p>
 <p align="center">Forked from <a href="https://github.com/Mofiqul/dracula.nvim">dracula.nvim</a> to adjust colors to my liking, all credit for all the formatting and support to <a href="https://github.com/Mofiqul">Mofiqul</a>.</p>
+
 ![example](./assets/1.png)
+
 ## ✔️ Requirements
 
 - Neovim >= 0.5.0
