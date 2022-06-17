@@ -409,7 +409,7 @@ M.apply = function()
 	highlight("BufferInactiveTarget", colors.red, nil, 'none', nil)
 
 	-- winbar
-	highlight("winbar", colors.black, nil, 'none', nil)
+	highlight("winbar", colors.white, colors.black, 'bold', nil)
 
 	-- Link highlights
 	vim.api.nvim_command('highlight link CompeDocumentation Pmenu')
