@@ -6,6 +6,7 @@ local DEFAULT_COLORS = {
   bg = "#1F2937",
   fg = "#F8FAFC",
   selection = "#334155",
+  cursorline = "#1e293b",
   comment = "#64748B",
   red = "#EF4444",
   orange = "#F58E0B",
@@ -125,8 +126,8 @@ M.apply = function()
 	end
 
 	highlight("Conceal", colors.comment, nil, nil, nil)
-	highlight("CursorColumn", nil, colors.black, nil, nil)
-	highlight("CursorLine", nil, colors.selection, nil, nil)
+	highlight("CursorColumn", nil, colors.cursorline, nil, nil)
+	highlight("CursorLine", nil, colors.cursorline, nil, nil)
 	highlight("ColorColumn", nil, colors.selection, nil, nil)
 
 	highlight("StatusLine", colors.white, colors.black, nil, nil)
