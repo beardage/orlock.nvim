@@ -23,6 +23,7 @@
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [LSPSaga](https://github.com/glepnir/lspsaga.nvim)
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 
 ## ⬇️ Installation
 
@@ -71,32 +72,33 @@ If you're using lua
 ```lua
 -- customize orlock color palette
 vim.g.orlock_colors = {
-  bg = "#1F2937",
-  fg = "#F8FAFC",
-  selection = "#334155",
-  comment = "#64748B",
-  red = "#EF4444",
-  orange = "#F58E0B",
-  yellow = "#FDE047",
-  green = "#34D399",
-  purple = "#A78BFA",
-  cyan = "#67E8F9",
-  teal = "#5EEAD4",
-  pink = "#F472B6",
-  bright_red = "#FF6E6E",
-  bright_green = "#4ADE80",
-  bright_yellow = "#FFFFA5",
-  bright_blue = "#7DD3FC",
-  bright_magenta = "#E868F9",
-  bright_violet = "#C4B5FD",
-  bright_cyan = "#A5F3FC",
-  bright_white = "#FFFFFF",
-  menu = "#111827",
-  visual = "#3E4452",
-  gutter_fg = "#4B5263",
-  nontext = "#3B4048",
-  white = "#F9FAFB",
-  black = "#111827",
+	bg = "#1F2937",
+	fg = "#F8FAFC",
+	selection = "#334155",
+	cursorline = "#182234",
+	comment = "#64748B",
+	red = "#EF4444",
+	orange = "#F58E0B",
+	yellow = "#FDE047",
+	green = "#34D399",
+	purple = "#A78BFA",
+	cyan = "#67E8F9",
+	teal = "#5EEAD4",
+	pink = "#F472B6",
+	bright_red = "#FF6E6E",
+	bright_green = "#4ADE80",
+	bright_yellow = "#FFFFA5",
+	bright_blue = "#7DD3FC",
+	bright_magenta = "#E868F9",
+	bright_violet = "#C4B5FD",
+	bright_cyan = "#A5F3FC",
+	bright_white = "#FFFFFF",
+	menu = "#111827",
+	visual = "#3E4452",
+	gutter_fg = "#4B5263",
+	nontext = "#3B4048",
+	white = "#F9FAFB",
+	black = "#111827",
 }
 -- show the '~' characters after the end of buffers
 vim.g.orlock_show_end_of_buffer = true
