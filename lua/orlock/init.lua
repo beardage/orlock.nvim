@@ -399,9 +399,10 @@ M.apply = function()
 	-- IndentBlankLine
 	highlight("IndentBlanklineContextChar", colors.bright_red, nil, "nocombine", nil)
 
-	-- Nvim compe
+	-- Nvim cmp
 	highlight("CmpItemAbbrDeprecated", colors.white, colors.menu, "none", nil)
 	highlight("CmpItemAbbrMatch", colors.cyan, colors.menu, "none", nil)
+	highlight("CmpBorder", colors.bright_violet, colors.menu, "none", nil)
 
 	--barbar
 	highlight("BufferCurrentTarget", colors.red, nil, "none", nil)
