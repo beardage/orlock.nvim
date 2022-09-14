@@ -401,7 +401,8 @@ M.apply = function()
 	-- Nvim cmp
 	highlight("CmpItemAbbrDeprecated", colors.white, colors.menu, "none", nil)
 	highlight("CmpItemAbbrMatch", colors.cyan, colors.menu, "none", nil)
-	highlight("CmpBorder", colors.bright_violet, colors.menu, "none", nil)
+	highlight("CmpPmenuBorder", colors.bright_violet, colors.menu, "none", nil)
+	highlight("PmenuSel", colors.purple, colors.menu, "none", nil)
 
 	--barbar
 	highlight("BufferCurrentTarget", colors.red, nil, "none", nil)
