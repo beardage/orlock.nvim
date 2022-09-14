@@ -72,7 +72,6 @@ M.apply = function()
 	end
 	local colors = M.colors()
 	M.apply_term_colors(colors)
-
 	-- highlight(Group, Foreground, Backgroud, Attribute, Special)
 	if vim.g.orlock_transparent_bg == true then
 		highlight("Normal", colors.fg, nil, nil, nil)
@@ -149,7 +148,7 @@ M.apply = function()
 	highlight("LineNr", colors.comment, nil, nil, nil)
 	highlight("MatchParen", colors.fg, nil, "underline", nil)
 	highlight("NonText", colors.nontext, nil, nil, nil)
-	highlight("Pmenu", colors.white, colors.menu, nil, nil)
+	highlight("Pmenu", colors.white, nil, nil, nil)
 	highlight("PmenuSel", colors.white, colors.selection, nil, nil)
 	highlight("PmenuSbar", nil, colors.bg, nil, nil)
 	highlight("PmenuThumb", nil, colors.selection, nil, nil)
