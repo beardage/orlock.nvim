@@ -421,6 +421,18 @@ M.apply = function()
 	highlight("rainbowcol6", colors.yellow, nil, "none", nil)
 	highlight("rainbowcol7", colors.bright_green, nil, "none", nil)
 
+	-- nvim-dap
+	highlight("DapBreakpoint", colors.bright_red, nil, "none", nil)
+	highlight("DapUiDecoration", colors.teal, nil, "none", nil)
+	highlight("DapUIStepOver", colors.purple, colors.menu, nil)
+	highlight("DapUIStepInto", colors.purple, colors.menu, nil)
+	highlight("DapUIStepBack", colors.purple, colors.menu, nil)
+	highlight("DapUIStepOut", colors.purple, colors.menu, nil)
+	highlight("DapUIStop", colors.red, colors.menu, nil)
+	highlight("DapUIPlayPause", colors.green, colors.menu, nil)
+	highlight("DapUIRestart", colors.green, colors.menu, nil)
+	highlight("DapUIUnavailable", colors.comment, colors.menu, nil)
+
 	-- Link highlights
 	vim.api.nvim_command("highlight link CompeDocumentation Pmenu")
 	vim.api.nvim_command("highlight link CompeDocumentationBorder Pmenu")
