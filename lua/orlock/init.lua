@@ -27,7 +27,7 @@ local DEFAULT_COLORS = {
 	menu = "#111827",
 	visual = "#3E4452",
 	gutter_fg = "#4B5263",
-	nontext = "#3B4048",
+	nontext = "#4a525e",
 	white = "#F9FAFB",
 	black = "#111827",
 }
@@ -116,6 +116,9 @@ M.apply = function()
 	highlight("Cursor", nil, nil, "reverse", nil)
 	highlight("CursorColumn", nil, colors.black, "reverse", nil)
 	highlight("CursorLineNr", colors.fg, nil, "bold", nil)
+	highlight("WinSeparator", colors.menu, nil, nil, nil)
+	highlight("WinBar", colors.cursorline, nil, nil, nil)
+	highlight("WinBarNC", colors.black, nil, nil, nil)
 
 	if vim.g.orlock_transparent_bg == true then
 		highlight("SignColumn", nil, nil, nil, nil)
@@ -375,6 +378,7 @@ M.apply = function()
 	highlight("LspReferenceText", colors.orange, nil, nil, nil)
 	highlight("LspReferenceRead", colors.orange, nil, nil, nil)
 	highlight("LspReferenceWrite", colors.orange, nil, nil, nil)
+	highlight("LspInlayHint", colors.orange, nil, nil, nil)
 
 	--LSP Saga
 	highlight("LspFloatWinNormal", colors.fg, nil, "none", nil)
