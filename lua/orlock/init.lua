@@ -118,7 +118,7 @@ M.apply = function()
 	highlight("CursorLineNr", colors.fg, nil, "bold", nil)
 	highlight("WinSeparator", colors.menu, nil, nil, nil)
 	highlight("WinBar", colors.cursorline, nil, nil, nil)
-	highlight("WinBarNC", colors.black, nil, nil, nil)
+	highlight("WinBarNC", colors.white, nil, nil, nil)
 
 	if vim.g.orlock_transparent_bg == true then
 		highlight("SignColumn", nil, nil, nil, nil)
@@ -378,7 +378,7 @@ M.apply = function()
 	highlight("LspReferenceText", colors.orange, nil, nil, nil)
 	highlight("LspReferenceRead", colors.orange, nil, nil, nil)
 	highlight("LspReferenceWrite", colors.orange, nil, nil, nil)
-	highlight("LspInlayHint", colors.orange, nil, nil, nil)
+	highlight("LspInlayHint", colors.nontext, nil, nil, nil)
 
 	--LSP Saga
 	highlight("LspFloatWinNormal", colors.fg, nil, "none", nil)
